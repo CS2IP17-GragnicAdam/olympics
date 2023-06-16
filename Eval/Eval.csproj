@@ -157,5 +157,8 @@
   <ItemGroup>
     <Folder Include="EventArgs\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplicationFrameHost_AV0Hm8DO7o.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
