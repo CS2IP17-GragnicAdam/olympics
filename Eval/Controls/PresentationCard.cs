@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Eval
+namespace Eval.Controls
 {
-    public partial class Form1 : Form
+    public partial class PresentationCard : UserControl
     {
-        public Form1()
+        public PresentationCard()
         {
             InitializeComponent();
         }

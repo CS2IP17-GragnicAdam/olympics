@@ -46,14 +46,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Controls\LargeCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LargeCard.Designer.cs">
+      <DependentUpon>LargeCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PresentationCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PresentationCard.Designer.cs">
+      <DependentUpon>PresentationCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SmallCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SmallCard.Designer.cs">
+      <DependentUpon>SmallCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ModeView.cs" />
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Sport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\LargeCard.resx">
+      <DependentUpon>LargeCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PresentationCard.resx">
+      <DependentUpon>PresentationCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SmallCard.resx">
+      <DependentUpon>SmallCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -123,11 +155,7 @@
     <None Include="Resources\taekwondo.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\" />
-    <Folder Include="Enums\" />
     <Folder Include="EventArgs\" />
-    <Folder Include="Forms\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
